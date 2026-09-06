@@ -1,9 +1,9 @@
 export default function CatalogHero() {
 	return (
 		<div>
-			<div className="absolute -top-3 right-4 md:right-0 md:-top-3.5 bg-accent-bold text-paper font-mono text-xs uppercase letter-spacing-wider px-2.5 py-1 transform -rotate-1.5">
+			{/* <div className="absolute -top-3 right-4 md:right-0 md:-top-3.5 bg-accent-bold text-paper font-mono text-xs uppercase letter-spacing-wider px-2.5 py-1 transform -rotate-1.5">
 				Front end
-			</div>
+			</div> */}
 
 			<div className="flex gap-8 mb-7 font-mono text-sm text-paper/60">
 				<div>
@@ -31,7 +31,7 @@ export default function CatalogHero() {
 			</h1>
 
 			<p className="font-mono text-sm text-accent mb-6">
-				Frontend Dngineer
+				Frontend Engineer
 			</p>
 
 			<p className="text-base text-paper/60 max-w-xl mb-7 leading-relaxed">
@@ -52,7 +52,7 @@ export default function CatalogHero() {
 				].map((skill) => (
 					<span
 						key={skill}
-						className="font-mono text-xs border border-accent/30 text-teal px-2 py-1 rounded-card"
+						className="font-mono text-xs border border-accent/30 text-teal px-2 py-1 rounded-card hover:text-surface-2 hover:bg-teal hover:border-accent/80"
 					>
 						{skill}
 					</span>

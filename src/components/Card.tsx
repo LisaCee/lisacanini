@@ -16,17 +16,17 @@ export default function Card({
   ...props
 }: CardProps) {
   return (
-    <div
-      className={`
+		<div
+			className={`
         bg-surface
         border border-accent/30
         rounded-card
-        ${hasTopBorder ? "border-t-[3px] border-t-accent-bold" : ""}
+        ${hasTopBorder ? "border-t-16 border-t-accent" : ""}
         ${className}
       `}
-      {...props}
-    >
-      {children}
-    </div>
+			{...props}
+		>
+			{children}
+		</div>
   );
 }

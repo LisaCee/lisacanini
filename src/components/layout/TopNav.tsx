@@ -5,14 +5,14 @@ const navItems = [
 		title: "Home",
 		href: "/",
 	},
-	{
-		title: "Projects",
-		href: "/projects",
-	},
-	{
-		title: "Contact",
-		href: "/contact",
-	},
+	// {
+	// 	title: "Projects",
+	// 	href: "/projects",
+	// },
+	// {
+	// 	title: "Contact",
+	// 	href: "/contact",
+	// },
 ];
 
 /**
@@ -21,15 +21,18 @@ const navItems = [
  * @returns {ReactElement}
  */
 export default function TopNav() {
-	const { pathname } = useLocation();
+	// const { pathname } = useLocation();
 
 	return (
-		<header className="text-paper border-b border-accent/30 pt-20 p-4 md:pt-8 md:pb-6 max-w-lg md:max-w-4xl mx-auto">
-			<div className="flex justify-between">
-				<Link to="/" className="uppercase font-mono text-paper">
+		<header className="text-paper border-b border-accent/30 pt-8 mx-auto w-full md:px-10 md:max-w-4xl">
+			<div className="flex justify-center mx-auto">
+				<Link
+					to="/"
+					className="text-3xl font-uppercase font-mono text-paper pb-5"
+				>
 					Lisa <span className="text-accent">Canini</span>
 				</Link>
-				<div className="flex gap-6 font-mono text-sm tracking-widest uppercase">
+				{/* <div className="flex gap-6 font-mono text-sm tracking-widest uppercase">
 					{navItems.map((item) => (
 						<Link
 							key={item.href}
@@ -43,7 +46,7 @@ export default function TopNav() {
 							{item.title}
 						</Link>
 					))}
-				</div>
+				</div> */}
 			</div>
 		</header>
 	);

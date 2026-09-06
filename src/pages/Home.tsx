@@ -20,7 +20,7 @@ export default function Home() {
 				<h2 className="font-mono text-xs uppercase letter-spacing-wider text-teal mb-4">
 					Selected records
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{featuredProjects.map((project) => (
 						<RecordCard key={project.id} project={project} />
 					))}
